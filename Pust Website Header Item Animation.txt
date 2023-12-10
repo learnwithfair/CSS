@@ -1,0 +1,8 @@
+
+
+.elementor-85 .elementor-element.elementor-element-b870e94 .elementor-icon-list-item:hover  {
+    color: var( --e-global-color-1920039 );
+    transition: transform .5s;
+    transform: scale(1.1);
+     
+}

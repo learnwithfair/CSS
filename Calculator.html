@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Calculaor</title>
+       <style>
+           *{
+               box-sizing: border-box;
+               
+           }
+           .center{
+               text-align: center;
+              
+           }
+            .display{
+            width: 337px;
+            height: 80px;
+            border: 3px solid black;
+            font-size: 43px;
+            padding:5px 10px ;
+            margin-bottom: 3px;
+            text-align: right;
+            letter-spacing: 5px;
+            border-bottom: 7px solid black;
+            
+        }
+        .button{
+            color:white;
+            background-color: black;
+            padding: 20px;
+            
+            width: 80px;
+            cursor: pointer;
+           
+        }
+        .color{
+            background-color: teal;
+            color:white;
+            width: 80px;
+            padding: 20px;
+           
+            cursor: pointer;
+        }
+        
+        
+        .rst{
+            background-color: green;
+            color:white;
+          
+            padding: 20px;
+            width: 80px;
+            cursor: pointer;
+        }
+        .btn{
+            height: 300px;
+            width: 340px;
+            margin: auto;
+            background-color:oldlace;
+          
+
+        }
+       
+        .btn div input:focus{
+            background-color: orange;
+            z-index: 2;
+            width: 100px;
+            position: relative;
+        }
+        .div{
+            
+            width: 85px;
+            height: 60px;
+            border: 2px white solid;
+            float: left;
+        }
+        .clear{
+            clear: both;
+        }
+        
+       </style>
+    </head>
+    <body>
+        <div class="center">
+            <h1 style="color: brown;font-family: castellar;">Calculaor</h1>
+            <div >
+                <input class="display" type="text" >
+            </div>
+            <div class="btn">
+                <div >
+                    
+                    <div class="div"><input type="button" class="button" value="C"></div>
+                    <div class="div"><input type="button" class="button" value="R"></div>
+                    <div class="div"><input type="button" class="button" value="%"></div>
+                    <div class="div"><input  type="button" class="color" value="/"></div>
+                </div>
+                <div class="clear"></div>
+                <div >
+                   <div class="div"> <input type="button"  class="button" value="7"></div>
+                    <div class="div"><input type="button" class="button" value="8"></div>
+                    <div class="div"><input type="button" class="button" value="9"></div>
+                    <div class="div"><input type="button" class="color" value="X"></div>
+                    
+                </div>
+                <div class="clear"></div>
+                <div>
+                    <div class="div"><input type="button" class="button"  value="4"></div>
+                    <div class="div"><input type="button" class="button" value="5"></div>
+                    <div class="div"><input type="button" class="button" value="6"></div>
+                    <div class="div"><input type="button" class="color" value="-"></div>
+                    
+                </div>
+                <div class="clear"></div>
+                <div >
+                    <div class="div"><input type="button" class="button" value="1"></div>
+                    <div class="div"><input type="button" class="button" value="2"></div>
+                   <div class="div"> <input type="button" class="button" value="3"></div>
+                   <div class="div"> <input type="button" class="color" value="+"></div>
+                    
+                </div>
+                <div class="clear"></div>
+                <div >
+                    <div class="div"><input type="button" class="button" value="0"></div>
+                    <div class="div"><input type="button" class="button" value="."></div>
+                    <div class="div"><input type="button" class="button" value="DEL"></div>
+                    <div class="div"><input type="button" class="rst" value="="></div>
+                    
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

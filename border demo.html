@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Border Demo</title>
+    </head>
+    <style>
+        .container{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        }
+        h1{
+            display: inline-block;
+            text-shadow: crimson 2px 2px;
+        }
+        .solid{
+            border-style: solid;
+            display: inline-block;
+        }
+        .double{
+            border-style: double;
+            display: inline-block;
+        }
+        .dotted{
+            border-style: dotted;
+            display: inline-block;
+        }
+        .dashed{
+            border-style: dashed;
+            display: inline-block;
+        }
+        .grove{
+            border-style: grove;
+            display: inline-block;
+        }
+        .inset{
+            border-style: inset;
+            display: inline-block;
+        }
+        .outset{
+            border-style: outset;
+            display: inline-block;
+        }
+        .inherie{
+            border-style: inherie;
+            display: inline-block;
+        }
+        .container>div>div{
+            font-size: 34px;
+            padding: 10px;
+            margin-top: 15px;
+            background-color:#f1f1f1;
+            border-width: 3px;
+            border-color: red;
+            left: 280px;
+            position:absolute;
+        }
+    </style>
+    <body>
+    <div class="container">
+        <div>
+            <h1>Solid border :</h1>
+            <div class="solid">Rahatul Islam</div>
+        </div>
+        <div>
+            <h1>Double border :</h1>
+            <div class="double">Rahatul Islam</div>
+        </div>
+        <div>
+            <h1>Dotted border :</h1>
+            <div class="dotted">Rahatul Islam</div>
+        </div>
+        <div>
+            <h1>Dashed border :</h1>
+            <div class="dashed">Rahatul Islam</div>
+        </div>
+        <div>
+            <h1>Grove border :</h1>
+            <div class="grove">Rahatul Islam</div>
+        </div>
+        <div>
+            <h1>Inset border :</h1>
+            <div class="inset">Rahatul Islam</div>
+        </div>
+        <div>
+            <h1>Outset border :</h1>
+            <div class="outset">Rahatul Islam</div>
+        </div>
+    </div>
+    </body>
+</html>

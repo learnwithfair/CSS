@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drop Down Menu</title>
+</head>
+<style>
+    .napber{
+        background-color: teal;
+        
+        height: 60px;
+       
+        
+    }
+    .napber>div{
+        float: left;
+        padding: 20px;
+        font-size: 24px;
+        
+        
+       
+    }
+    .contact{
+        position: relative;
+        
+    }
+    .details>a{
+        text-decoration: none;
+        position: absolute;
+        float: left;
+        color: white;
+       
+        z-index: 1;
+        left: 20px;
+        width: 380px;
+        visibility: hidden;
+        background-color: purple;
+        
+    }
+   
+    .contact:hover .details a{
+       
+        visibility: visible;
+    }
+    .details a:hover {
+        color: royalblue;
+        background-color: violet;
+        color:red;
+    }
+</style>
+<body bgcolor="magenta">
+    <div class="napber">
+        <div>Home</div>
+        <div>Menu</div>
+        <div class="contact">
+            Contact Me
+           <div class="details">
+            <a href="tel:+8801790-224950" target="blank">Mobile : +8801790-224950</a><br>
+            <a href="#">Facebook : Md Rahatul Islam</a><br>
+            <a href="mailto:rahatul.ice.09.pust@gmail.com" target="blank">Email : rahatul.ice.09.pust@gamil.com</a><br>
+            
+           </div>
+        </div>
+        <div>About us</div>
+        
+    </div>
+</body>
+</html>

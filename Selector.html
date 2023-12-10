@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selector</title>
+    <style>
+        h1{
+            color: red;
+            text-decoration: underline;
+        }
+        /*Element selector*/
+        h5{
+            color:teal;
+        }
+            /*Group selector*/
+        span,b,section {
+            background-color:steelblue;
+        }
+        /* Descended Selector*/
+        div p {
+            color:white
+        }
+        /* Descended Selector*/
+        div  section p{
+           color:yellow;
+           background-color: teal;
+        }
+        /*General severing  selector*/
+        div~ p {
+            color:blue;
+        }
+         /*Exaction severing  selector*/
+        div+blink {
+            font-size: 34px;
+            color:maroon;
+           
+        }
+         /*Universal  selector*/
+        *{
+            background-color:magenta;
+        }
+        /*Chilled  selector*/
+        footer > i {
+            color:lawngreen;
+        }
+        footer >h4>i {
+            background-color: palegoldenrod;
+        }
+    </style>
+</head>
+<body>
+    <ol>
+        <li><h1>Element Selector Demo :</h1></li>
+        <h5>I Love Bangladesh</h5>
+        <li><h1>Group Selector Demo :</h1></li>
+        <span>Group selector Demo-1</span><br/>
+        <b>Group selector Demo-2</b><br/>
+        <section>Group selector Demo-3</section>
+        <li><h1>Descended Selector Demo :</h1></li>
+        <div>
+            <p>Bangladesh</p>
+            <p>America</p>
+            <section><p>Rahatul islam</p></section>
+        </div>
+        <li><h1>Chilled Selector Demo :</h1></li>
+        <footer>
+            <i>This is Chailed Demo-1</i><br/>
+            <i>This is Chailed Demo-2</i><br/>
+            <h4><i>This is Not Chailed</i></h4>
+        </footer>
+        <li><h1>General severing Selector Demo :</h1></li>
+        <p>This is Pragraph 3</p>
+        <p>This is Pragraph 4</p>
+        <li><h1>Exaction severing Selector Demo :</h1></li>
+        <ul>
+            <div></div>  
+            <blink><li>India</li></blink>
+                <li>London</li>
+                <li>Pakistan</li>
+        </ul>
+    </ol>
+</body>
+</html>

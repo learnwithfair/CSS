@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Overflow Demo</title>
+    </head>
+    <style>
+        .contant{
+            width: 500px;
+            height: 200px;
+            background-color: lime;
+            padding: 20px;
+            text-align: justify;
+            font-size: 34px;
+            overflow:auto;
+            border: maroon 5px solid;
+            text-indent:70px;
+            position: relative;
+        }
+        .contant::first-letter{
+            color: mediumvioletred;
+            font-size:6rem;
+            font-style: italic;
+        }
+        .title{
+           color: blue;
+           text-decoration: underline;
+            cursor: pointer;
+        }
+        .deatils{
+            position: absolute;
+            width: 250px;
+            background-color: steelblue;
+            padding: 20px;
+            left: 220px;
+            border:tomato 5px solid;
+            top: 120px;
+            z-index: 1;
+            color: white;
+            visibility: hidden;
+
+        }
+        .title:hover .deatils{
+            visibility: visible;
+           
+            
+        }
+        
+    </style>
+    <body>
+        <div class="contant">
+                
+                        When <span class="title">Md.Rahatul Islam
+                            <span class="deatils">He is a Student of ICE at PUST. He is 22 years old.
+                                His Father's name is Mohammad Ali and Mother name is Most. Sultana Raziya.</span> 
+                            </span>
+                    
+                    creating this resume, think of what you want the employer to learn about you in under five
+                    seconds. Look at the organization, the appearance, and the information to determine whether the
+                    document you have created represents you at your best. You may use a different font besides
+                    12pt Times New Roman for the body of the resume, but do not use more than two styles of
+                    fonts—one for headings, and one for text. You must use parallel grammatical construction for all
+                    lists and bullet items.
+                
+        </div>
+    </body>
+</html>

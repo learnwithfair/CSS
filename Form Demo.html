@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Demo</title>
+    <style>
+        body{
+            background-color: "bgcolor";
+        }
+        #search{
+            width: 360px;
+            height: 40px;
+            font-size: 24px;
+            box-sizing: border-box;
+            border: none;
+            background-color:thistle;
+            border-radius: 10px;
+            background-image: url();
+            background-position: 0px;
+        }
+        .name{
+            width: 100%;
+            height: 40px;
+            padding: 10px;
+            box-sizing: border-box;
+            font-size: 24px;
+            border: none;
+            background-color:thistle;
+            border-radius: 10px;
+        }
+        b p{
+            font-size: 30px;
+        }
+        #search:focus{
+            width: 100%;
+            transition:ease-in-out .5s;
+           
+        }
+        .feedback{
+            resize: none;
+            font-size: 18px;
+            border-radius: 15px;
+            box-shadow: 0px 5px 0px 5px whitesmoke;
+        }
+        #drop{
+            font-size: 34px;
+            background-color: cadetblue;
+            border: none;
+            border-radius: 15px;
+            
+        }
+    </style>
+</head>
+<body>
+        
+        <form action="">
+                <datalist id="names">
+                    <option value="Rahatul Islam">Rahaul Islam</option>
+                    <option value="Anisul Islam">Anisul Islam</option>
+                    <option value="Suhanur Islam">Suhanur Islam</option>
+                    <option value="Imran Hossain">Imran Hossain</option>
+                   
+                </datalist>
+                <input type="search" list="names" name="Search" placeholder="Search" id="search">
+                <b> <p>First Name :</p></b>
+                <input type="text" required name="" placeholder="Enter First Name" class="name">
+                <b><p>Last Name :</p></b>
+                <input type="text" name="" required placeholder="Enter Last Name" class="name">
+                <b><p>Programing Language :
+                <select name=""" id="drop">
+                    <option value="C/C++" >C/C++</option>
+                    <option value="JAVA">JAVA</option>
+                    <option value="JAVA Swing">JAVA Swing</option>
+                    <option value="Android">Android</option>
+                    <option value="HTML" selected>HTML</option>
+                    <option value="CSS">CSS</option>
+                    
+                </select>
+                </p> </b>
+                <b><p>Feedback :</p></b>
+
+                <textarea name="" class="feedback" cols="70" rows="5" placeholder="Write your comment here..."></textarea>
+                
+                <p></p>
+                <b>Date Time Local</b><input type="datetime-local" name="" id="" class="name">
+                <p></p>
+                <b>Select Background Color : </b><input type="color" name="" id="bgcolor">
+                <p></p>
+                <input type="file" name="" id="">
+                <p></p>
+                <b>Spiner</b> <input type="number" name="" id="">
+                <p></p>
+                <b>Time : </b><input type="time" name="" id="">
+                <p></p>
+                <b>Range</b><input type="range" name="" id="">
+                <p></p>
+                <input type="submit" value="Submit">
+        </form>
+        
+        
+    
+</body>
+</html>
